@@ -64,8 +64,11 @@ export const useStyles = makeStyles({
     width: `${1/7*100}%`,
     background: "#242424",
     alignItems: 'center',
-    boxShadow: 10
+    boxShadow: 10,
     // marginTop: '5%',
+    "& .MuiPaper-root": {
+      background: "#242424"
+    }
   },
   drawerText: {
     color: "#39d7fa",
@@ -75,6 +78,9 @@ export const useStyles = makeStyles({
     display: 'flex',
     background: '#121212',
     marginBottom: 12,
+    "& .MuiPaper-root": {
+      background: "#242424"
+    }
   },
   cardTitle: {
     fontSize: 16,
