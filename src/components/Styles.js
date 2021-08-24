@@ -62,7 +62,7 @@ export const useStyles = makeStyles({
   },
   drawerPaper: {
     width: `${1/7*100}%`,
-    backgroundColor: "#242424",
+    background: "#242424",
     alignItems: 'center',
     boxShadow: 10
     // marginTop: '5%',
@@ -73,7 +73,7 @@ export const useStyles = makeStyles({
   card: {
     height: '13%',
     display: 'flex',
-    backgroundColor: '#121212',
+    background: '#121212',
     marginBottom: 12,
   },
   cardTitle: {
