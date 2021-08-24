@@ -18,30 +18,29 @@ import Instructions from './components/Instructions';
 function App() {
 
   return (
-    <Router>
-      <Helmet>
-        <style>{'body { background-color: #121212; }'}</style>
-      </Helmet>
-      <SnackbarProvider 
-        maxSnack={5} 
-        anchorOrigin={{
-          vertical: 'bottom',
-          horizontal: 'left',
-        }}
-        TransitionComponent={Slide}>
-        <Switch>
-          <Route exact path='/'>
-            {/* <Timer_min /> */}
-            <Timer />
-          </Route>
-          <Route exact path='/instructions' >
-            <Instructions />
-            {/* <HowTo /> */}
-          </Route>
-        </Switch>
-      </SnackbarProvider>
-    </Router>
-    
+      <Router>
+        {/* <Helmet>
+          <style>{'body { background-color: #121212; }'}</style>
+        </Helmet> */}
+        <SnackbarProvider 
+          maxSnack={5} 
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'left',
+          }}
+          TransitionComponent={Slide}>
+          <Switch>
+            <Route exact path='/'>
+              {/* <Timer_min /> */}
+              <Timer />
+            </Route>
+            <Route exact path='/instructions' >
+              <Instructions />
+              {/* <HowTo /> */}
+            </Route>
+          </Switch>
+        </SnackbarProvider>
+      </Router>
   );
 }
 
