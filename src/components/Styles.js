@@ -78,7 +78,7 @@ export const useStyles = makeStyles({
     display: 'flex',
     // background: '#121212',
     marginBottom: 12,
-    "& .MuiPaper-root": {
+    "&.MuiPaper-root": {
       backgroundColor: "#242424"
     }
   },
