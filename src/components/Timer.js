@@ -308,7 +308,7 @@ function Timer() {
         </Grid>
       </Grid>
       <Drawer variant='permanent' anchor='right' className={classes.drawer} 
-              classes={{ paper: classes.drawerPaper, }}>
+              classes={{ paper: classes.drawerPaper }}>
         <Grid item xs={5}className='timer' >
           <Grid container direction='column' justifyContent='space-between' alignItems='center'>
             <Grid container justifyContent='center' alignItems='center' className='status'>

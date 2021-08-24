@@ -62,12 +62,12 @@ export const useStyles = makeStyles({
   },
   drawerPaper: {
     width: `${1/7*100}%`,
-    background: "#242424",
+    // background: "#242424",
     alignItems: 'center',
     boxShadow: 10,
     // marginTop: '5%',
-    "& .MuiPaper-root": {
-      background: "#242424"
+    "&.MuiPaper-root": {
+      backgroundColor: "#242424"
     }
   },
   drawerText: {
@@ -76,10 +76,10 @@ export const useStyles = makeStyles({
   card: {
     height: '13%',
     display: 'flex',
-    background: '#121212',
+    // background: '#121212',
     marginBottom: 12,
     "& .MuiPaper-root": {
-      background: "#242424"
+      backgroundColor: "#242424"
     }
   },
   cardTitle: {
