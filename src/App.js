@@ -14,7 +14,6 @@ import {Helmet} from 'react-helmet'
 import Home from './components/Home';
 import Timer from './components/Timer';
 import Instructions from './components/Instructions';
-import HowTo from './components/HowTo';
 
 function App() {
 
