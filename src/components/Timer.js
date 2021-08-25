@@ -167,12 +167,13 @@ function Timer() {
 
   // Resets timer
   function reset() {
-    setSeconds(0);
     setIsActive(false);
-    setElixir(BEGINNING_ELIXIR)
-    setIsSingle(true)
-    setIsDouble(false)
-    setIsTriple(false)
+    setElixir(BEGINNING_ELIXIR);
+    setIsOvertime(false);
+    setIsSingle(true);
+    setIsDouble(false);
+    setIsTriple(false);
+    setSeconds(0);
   }
 
   // convert seconds left to time
@@ -219,11 +220,11 @@ function Timer() {
         }, SINGLE_RATE * 988.88889 / 10 - 14)
       } else if (isDouble) {
         elixirInterval = setInterval(() => {
-          setElixir(elixir => elixir + 0.10 - (1/14));
+          setElixir(elixir => elixir + 0.10); // - (1/14)
         }, DOUBLE_RATE * 988.88889 / 10 - 14)
       } else if (isTriple) {
         elixirInterval = setInterval(() => {
-          setElixir(elixir => elixir + 0.10 - (1/14));
+          setElixir(elixir => elixir + 0.10); //- (1/14)
         }, TRIPLE_RATE * 988.88889 / 10 - 14)
       }
     } else if (!isActive) {
@@ -314,10 +315,9 @@ function Timer() {
             <Grid container justifyContent='center' alignItems='center' className='status'>
             <br/>
             <br/>
-
               <ButtonGroup aria-label="vertical contained primary button group" color='primary'
                 orientation='vertical' variant='text' disableElevation>
-                <Button className={classes.status} disabled={isSingle}>
+                <Button className={classes.status} disabled={!isSingle}>
                   {isSingle ? <Typography className={classes.statusText}>1x</Typography> : '1x'}
                 </Button>
                 <Button className={classes.status} disabled={!isDouble}>

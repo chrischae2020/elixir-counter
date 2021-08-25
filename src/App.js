@@ -14,14 +14,12 @@ import {Helmet} from 'react-helmet'
 import Home from './components/Home';
 import Timer from './components/Timer';
 import Instructions from './components/Instructions';
+import ChangeLogs from './components/ChangeLog';
 
 function App() {
 
   return (
       <Router>
-        {/* <Helmet>
-          <style>{'body { background-color: #121212; }'}</style>
-        </Helmet> */}
         <SnackbarProvider 
           maxSnack={5} 
           anchorOrigin={{
@@ -31,13 +29,14 @@ function App() {
           TransitionComponent={Slide}>
           <Switch>
             <Route exact path='/'>
-              {/* <Timer_min /> */}
               <Timer />
             </Route>
             <Route exact path='/instructions' >
               <Instructions />
-              {/* <HowTo /> */}
             </Route>
+            {/* <Route exact path='/elixir-counter'>
+              <Timer />
+            </Route> */}
           </Switch>
         </SnackbarProvider>
       </Router>

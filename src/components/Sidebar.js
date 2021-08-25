@@ -12,6 +12,7 @@ import ListItemText from '@material-ui/core/ListItemText';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import { useStyles } from './Styles';
 import Home from './Home';
+import Divider from '@material-ui/core/Divider'
 
 
 
@@ -33,6 +34,17 @@ export default function Sidebar() {
               <ListItemText primary='Instructions' className={classes.drawerText} />
             </Link>
           </ListItem>
+          {/* <ListItem button key='Elixir Counter'>
+            <Link to='/elixir-counter' style={{ textDecoration: 'none' }}>
+              <ListItemText primary='Elixir Counter' className={classes.drawerText} />
+            </Link>
+          </ListItem> */}
+          {/* <Divider />
+          <ListItem button key='Change Logs'>
+            <Link to ='/change-logs' style={{ textDecoration: 'none' }}>
+              <ListItemText primary='Change Logs' className={classes.drawerText}/>
+            </Link>
+          </ListItem> */}
         </List>
       </Drawer>
   );
